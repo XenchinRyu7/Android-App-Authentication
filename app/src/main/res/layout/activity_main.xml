@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="ScrollViewSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz1234567890"
+                android:inputType="textFilter"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nama Lengkap"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etNamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Asal Sekolah"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etAsalSekolah"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alamat Tinggal"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:lines="3"
+                android:padding="5dp"
+                android:singleLine="false"
+                android:textColor="#000"
+                android:textSize="14sp"
+                tools:ignore="Autofill,LabelFor" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
