@@ -65,8 +65,8 @@ public class RegisterActivity extends AppCompatActivity {
                 etPassword,
                 etEmail,
                 etNamaLengkap,
-                etAlamat,
                 etAsalSekolah,
+                etAlamat,
         };
         StringBuilder isiFileBuilder = new StringBuilder();
         for (EditText et : ets) {
@@ -84,4 +84,11 @@ public class RegisterActivity extends AppCompatActivity {
         Toast.makeText(this, "Register Berhasil", Toast.LENGTH_SHORT).show();
         onBackPressed();
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
 }

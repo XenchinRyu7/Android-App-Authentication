@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.miLogout)
+        if (item.getItemId() == R.id.Logout)
             showLogoutDialog();
         return super.onOptionsItemSelected(item);
     }

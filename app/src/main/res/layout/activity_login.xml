@@ -49,7 +49,8 @@
         android:inputType="textPassword"
         android:textColor="#000"
         android:textSize="14sp"
-        tools:ignore="Autofill,LabelFor" />
+        tools:ignore="Autofill,LabelFor"
+        android:backgroundTint="#FF0000"/>
     <Button
         android:id="@+id/btLogin"
         android:layout_width="match_parent"

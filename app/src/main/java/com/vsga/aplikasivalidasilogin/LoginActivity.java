@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         Button btLogin = findViewById(R.id.btLogin);
         Button btRegister = findViewById(R.id.btRegister);
-//event handler
+        //event handler
         btLogin.setOnClickListener(v -> login());
         btRegister.setOnClickListener(v -> {
             Intent intent = new Intent(this, RegisterActivity.class);
